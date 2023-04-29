@@ -1,7 +1,8 @@
 <h1>{{ title }}</h1>
 
-<div *ngFor="let user of users">
-  <span>{{ user.id }} - {{ user.userName }}</span>
+<div *ngFor="let user of users" class="grid">
+  <span class="col">{{ user.id }}</span>
+  <span class="col">{{ user.userName }}</span>
 </div>
 
 <div>
